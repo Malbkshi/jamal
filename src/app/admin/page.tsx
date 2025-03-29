@@ -229,13 +229,13 @@ export default function AdminDashboard() {
               <tbody className="bg-white divide-y divide-gray-200">
                 {filteredBookings.map((booking) => (
                   <tr key={booking.id} className="hover:bg-gray-50 transition-colors duration-150">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{booking.name}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{booking.phone}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{booking.service}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{booking.date}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{booking.time}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-900">{booking.name}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-base text-gray-600">{booking.phone}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-base text-gray-600">{booking.service}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-base text-gray-600">{booking.date}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-base text-gray-600">{booking.time}</td>
                     <td className="px-6 py-4 whitespace-nowrap">
-                      <span className={`px-3 py-1 inline-flex text-sm leading-5 font-medium rounded-full ${
+                      <span className={`px-3 py-1 inline-flex text-base leading-5 font-medium rounded-full ${
                         booking.status === 'confirmed' ? 'bg-pink-50 text-pink-700 border border-pink-200' :
                         booking.status === 'cancelled' ? 'bg-red-50 text-red-700 border border-red-200' :
                         'bg-amber-50 text-amber-700 border border-amber-200'

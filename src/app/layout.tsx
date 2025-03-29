@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato } from 'next/font/google';
+import { Playfair_Display, Lato, Cairo } from 'next/font/google';
 // Remove these imports as we're now using optimized local fonts
 // import "@fontsource/noto-sans-arabic/400.css";
 // import "@fontsource/noto-sans-arabic/700.css";
@@ -24,6 +24,12 @@ const lato = Lato({
   weight: ['300', '400', '700'],
   display: 'swap',
   variable: '--font-lato',
+});
+
+const cairo = Cairo({
+  subsets: ['arabic'],
+  display: 'swap',
+  variable: '--font-cairo',
 });
 
 export const metadata: Metadata = {
@@ -62,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl" className={`${playfair.variable} ${lato.variable} font-lato antialiased`}>
+    <html lang="ar" dir="rtl" className={`${playfair.variable} ${lato.variable} ${cairo.variable} font-lato antialiased`}>
       <body className="font-lato antialiased">
         <ThemeProvider attribute="class" defaultTheme="light">
           <Navbar />
