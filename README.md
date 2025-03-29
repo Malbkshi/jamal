@@ -1,24 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# مركز منال الجمال للعناية بالبشرة وإزالة الشعر
 
-## Getting Started
+مركز متخصص في العناية بالبشرة وإزالة الشعر بأحدث التقنيات العالمية
 
-First, run the development server:
+## Features
+
+- Full Arabic RTL (right-to-left) layout support
+- Elegant UI with a pink and white color scheme
+- Responsive design for all devices
+- Online booking system
+- Service catalog with detailed descriptions
+- Contact form with WhatsApp integration
+- Google Maps location integration
+- Testimonials section
+
+## Technologies Used
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion for animations
+- React Icons
+
+## Running the Project
 
 ```bash
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Home
+- Services
+- Service Details
+- About
+- Contact
+- Booking
 
 ## Learn More
 
